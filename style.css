@@ -1,0 +1,100 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+:root {
+  --color-paleblue: hsl(225, 100%, 94%);
+  --color-brightblue: rgb(56, 41, 224);
+  --color-very-paleblue: hsl(225, 100%, 98%);
+  --color-desaturatedblue: hsl(224, 23%, 55%);
+  --color-darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--color-paleblue);
+}
+
+.main-container {
+  max-width: 450px;
+  margin: 10rem auto;
+  border-radius: 20px;
+  background-color: white;
+  justify-content: center;
+}
+
+.illustration-hero {
+  border-radius: 20px 20px 0 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+}
+
+.summary-message {
+  color: var(--color-desaturatedblue);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.product-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--color-very-paleblue);
+  border-radius: 20px;
+}
+
+.product-title,
+.price {
+  margin: 0.2rem;
+}
+
+.product-title {
+  font-weight: 900;
+}
+
+.price {
+  color: var(--color-desaturatedblue);
+}
+
+.change-btn,
+.music-icon {
+  padding: 1rem 1rem;
+}
+
+.change-btn {
+  margin-left: auto;
+}
+.cancel-btn {
+  all: unset;
+  color: var(--color-desaturatedblue);
+}
+
+.payment-btn,
+.cancel-btn {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.payment-btn {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--color-brightblue);
+  color: var(--color-very-paleblue);
+  box-shadow: 0 1rem 1rem rgba(56, 41, 224, 15%);
+}
